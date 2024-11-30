@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <title>A Missão do Amuleto Perdido</title>
+</head>
+
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <p>Você encontra um mapa misterioso no sótão de sua casa. Ele indica o caminho para um antigo amuleto mágico.</p>
+            <button class="btn-proximo" data-proximo="1">Siga o mapa imediatamente.</button>
+            <button class="btn-proximo" data-proximo="2">Ignorar o mapa e voltar à sua rotina.</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>Você encontra suprimentos para a aventura.</p>
+            <button class="btn-proximo" data-proximo="3"> Levar apenas comida e água.</button>
+            <button class="btn-proximo" data-proximo="4"> Levar ferramentas e armas também.</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>Você nunca descobre o amuleto.</p>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>Você enfrenta uma tempestade no caminho.</p>
+            <button class="btn-proximo" data-proximo="5"> Procurar abrigo na floresta.</button>
+            <button class="btn-proximo" data-proximo="6"> Continuar avançando.</button>
+        </div>
+        <div class="passo" id="passo-4">
+            <p> O mapa apresenta dois caminhos diferentes.</p>
+            <button class="btn-proximo" data-proximo="7"> Seguir o caminho curto, mas perigoso.</button>
+            <button class="btn-proximo" data-proximo="8"> Siga caminho pelo longo e seguro.</button>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <img src="cenario-passo5.png" alt="">
+            <p> Você encontra uma cabana abandonada na floresta. Dentro, há faixas sobre o amuleto.</p>
+                <button class="btn-proximo" data-proximo="9"> Explore uma cabana.</button>
+                <button class="btn-proximo" data-proximo="10"> Ignorar a cabana e seguir viagem.</button>
+        </div>
+        <div class="passo" id="passo-6">
+            <p> Você adoece e desiste da aventura.</p>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <p> Você enfrenta uma penetração de pedras.</p>
+            <button class="btn-proximo" data-proximo="11">Use suas ferramentas para escapar.</button>
+            <button class="btn-proximo" data-proximo="15"> Tentar escalar sem equipamentos.</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <p>O trajeto é tranquilo, mas você perde muito tempo.</p>
+            <button class="btn-proximo" data-proximo="11"> Continuar pacientemente.</button>
+            <button class="btn-proximo" data-proximo="7"> Voltar e arriscar o caminho curto.</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <p>Dentro da cabana, você descobre que o amuleto está protegido por uma criatura mágica.</p>
+            <button class="btn-proximo" data-proximo="10">Anote as faixas e continue.</button>
+            <button class="btn-proximo" data-proximo="16">Fique na cabana e espere ajuda.</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <img src="cenario-passo10.png" alt="">
+            <p> Você chega ao local marcado no mapa, mas é confrontado por um guardião mágico.</p>
+            <button class="btn-proximo" data-proximo="11"> Usar para inteligência resolver o enigma do guardião</button>
+            <button class="btn-proximo" data-proximo="17"> Tentar enfrentá-lo diretamente. </button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <p>Após resolver o enigma ou usar as ferramentas, o guardião permite que você entre no templo.</p>
+            <button class="btn-proximo" data-proximo="13"> Pegue o amuleto imediatamente.</button>
+            <button class="btn-proximo" data-proximo="14">Examine o templo com cuidado antes de pegar o amuleto.</button>
+        </div>
+
+        <div class="passo" id="passo-12">
+            <p> O templo começa a desmoronar assim que você pega o amuleto.</p>
+            <button class="btn-proximo" data-proximo="18">Correr para a saída</button>
+            <button class="btn-proximo" data-proximo="3">Usar para inteligência desativar as armadilhas</button>
+        </div>
+
+        <div class="passo" id="passo-13">
+            <p>Você desativa as armadilhas e sai do templo com o amuleto.</p>
+                <button class="btn-proximo" data-proximo="14"> concluir</button>
+        </div>
+
+            <div class="passo" id="passo-14">
+                <p>O amuleto confere grande poder, e você se torna um(a) herói(ína) lendário(a)!</p>
+        </div>
+        <div class="passo" id="passo-15">
+            <p>Você cai e fica preso.</p>
+    </div>
+    <div class="passo" id="passo-16">
+        <p>O tempo passa, e você desiste.</p>
+</div>
+<div class="passo" id="passo-17">
+    <p>Você é derrotado.</p>
+</div>
+<div class="passo" id="passo-18">
+        <p> Você escapa, mas perde o amuleto.</p>
+</div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
